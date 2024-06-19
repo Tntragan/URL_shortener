@@ -21,7 +21,7 @@ app.get('/api/hello', function (req, res) {
 
 app.get('/api/shorturl', (req, res) => {
   res.json({ greeting: 'hello API' })
-  console.log(__dirname + req.path)
+  console.log(req)
 })
 
 app.listen(port, function () {
